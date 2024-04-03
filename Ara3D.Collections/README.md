@@ -4,6 +4,5 @@
 
 Ara3D.Collections is a library of immutable abstract data types (ADT) inspired by LINQ.
 
-This extends the ideas from <https://github.com/vimaec/LinqArray>.
-
-This is a work in progress, and is not yet intended for wide consumption. 
+This extends the ideas from <https://github.com/vimaec/LinqArray> and 
+[LINQ for Immutable Arrays](https://www.codeproject.com/Articles/517728/LINQ-for-Immutable-Arrays).

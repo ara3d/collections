@@ -4,15 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>A library of immutable collections.</Description>
-    <PackageProjectUrl>https://github.com/ara3d/ara3d/src/Ara3D.Collections</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ara3d/collections</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ara3d/collections</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="README.md">
+    <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
 </Project>
   

@@ -16,4 +16,4 @@
 
         public IntegerRange(int from, int count) => (From, Count) = (from, count);
     }
-}
+}   
