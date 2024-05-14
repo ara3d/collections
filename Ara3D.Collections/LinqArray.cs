@@ -1024,8 +1024,8 @@ namespace Ara3D.Collections
             return self.SetElementAt(index, value);
         }
 
-        public static IArray2D<V> CartesianProduct<T, U, V>(this IArray<T> self, IArray<U> other, Func<T, U, V> func)
-            => self.SelectMany(x => other.Select(y => func(x, y))).ToArray2D(other.Count, self.Count);
+        public static IArray2D<V> CartesianProduct<T, U, V>(this IArray<T> self, IArray<U> other, Func<U, T, V> func)
+            => self.SelectMany(y => other.Select(x => func(x, y))).ToArray2D(other.Count, self.Count);
 
         public static int BinarySearch<T>(this IArray<T> self, Func<T, int> compare)
             => self.Count == 0 ? -1 : BinarySearchIndex(self, i => compare(self[i]), 0, self.Count - 1);

@@ -37,7 +37,7 @@ namespace Ara3D.Collections
             => arrays.ToIArray().ToArray2D();
         
         public static IArray2D<T> ToArray2D<T>(this IArray<IArray<T>> arrays)
-            => new Array2D<T>(arrays.SelectMany(a => a), arrays.Count, arrays[0].Count);
+            => new Array2D<T>(arrays.SelectMany(a => a), arrays[0].Count, arrays.Count);
 
         public static IArray2D<T> ToArray2D<T>(this IArray<T> array, int columns, int rows)
             => new Array2D<T>(array, columns, rows);
