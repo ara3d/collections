@@ -524,7 +524,7 @@ namespace Ara3D.Collections
             => Select((self.Count - from) / stride, i => self[from + i * stride]);
 
         /// <summary>
-        /// Returns a new array containing just the first stride items.
+        /// Returns a new array containing just the first n items.
         /// </summary>
         public static IArray<T> Take<T>(this IArray<T> self, int n)
             => self.Slice(0, n);
